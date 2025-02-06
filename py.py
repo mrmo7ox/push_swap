@@ -6,11 +6,11 @@ MAX = 500
 
 def get_Numbers():
     global MIN, MAX
-    MIN += 100
-    MAX += 100
+    MIN += 500
+    MAX += 500
     numbers = []
     
-    while len(numbers) < 100:
+    while len(numbers) < 500:
         x = random.randint(MIN, MAX)
         if x not in numbers:
             numbers.append(x)
@@ -27,7 +27,7 @@ while True:
     command_c = f'ARG="{commandnumbers}"; ./push_swap $ARG | ./checker $ARG'
     output_c = os.popen(command_c).read()
     
-    if int(output) >= 700:
+    if int(output) >= 5500:
         print(commandnumbers, output_c)
         print(numbers)
     else:

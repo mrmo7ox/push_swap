@@ -6,7 +6,7 @@
 /*   By: moel-oua <moel-oua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 11:59:46 by moel-oua          #+#    #+#             */
-/*   Updated: 2025/02/06 15:02:22 by moel-oua         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:19:15 by moel-oua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_strchr(const char *s, int c);
 int		dup_checker_bonus(t_node *a, int n);
 void	ft_lstclear_bonus(t_node **stack);
 void	handle_error_bonus(t_node **stack, char **res);
-long	ft_atoi_bonus(char *str, int i, int sign, char **split, t_node **stack);
+long	ft_atoi_bonus(char *str, int i, char **split, t_node **stack);
 void	ft_lstadd_back_bonus(t_node **stack, t_node *new);
 t_node	*ft_lstlast_bonus(t_node *head);
 t_node	*ft_lstnew_bonus(int value, int rank);

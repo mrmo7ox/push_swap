@@ -6,7 +6,7 @@
 /*   By: moel-oua <moel-oua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 16:03:32 by moel-oua          #+#    #+#             */
-/*   Updated: 2025/02/06 15:01:57 by moel-oua         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:17:58 by moel-oua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	make_stack_bonus(t_node **a, char **dc, int i)
 		j = 0;
 		while (str[j])
 		{
-			nbr = ft_atoi_bonus(str[j], 0, 0, str, a);
+			nbr = ft_atoi_bonus(str[j], 0, str, a);
 			if (dup_checker_bonus(*a, (int)nbr))
 				handle_error_bonus(a, str);
 			(ft_lstadd_back_bonus(a, ft_lstnew_bonus((int)nbr, 0)));

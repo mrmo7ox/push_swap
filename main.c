@@ -6,7 +6,7 @@
 /*   By: moel-oua <moel-oua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 13:25:51 by moel-oua          #+#    #+#             */
-/*   Updated: 2025/02/06 14:52:29 by moel-oua         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:16:24 by moel-oua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	make_stack(t_node **a, char **dc, int i)
 		j = 0;
 		while (str[j])
 		{
-			nbr = ft_atoi(str[j], 0, 0, str, a);
+			nbr = ft_atoi(str[j], 0, str, a);
 			if (dup_checker(*a, (int)nbr))
 				handle_error(a, str);
 			(ft_lstadd_back(a, ft_lstnew((int)nbr)));

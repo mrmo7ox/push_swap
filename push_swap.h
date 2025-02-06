@@ -6,7 +6,7 @@
 /*   By: moel-oua <moel-oua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/18 15:48:18 by moel-oua          #+#    #+#             */
-/*   Updated: 2025/02/06 14:52:10 by moel-oua         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:16:11 by moel-oua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int		not_sorted(t_node **stack);
 void	set_position(t_node *stack);
 int		max_t_node_positon(t_node *stack);
 char	**ft_split(char *str, char c, int i, int j);
-long	ft_atoi(char *str, int i, int sign, char **split, t_node **stack);
+long	ft_atoi(char *str, int i, char **split, t_node **stack);
 int		dup_checker(t_node *a, int n);
 void	ft_lstclear(t_node **stack);
 void	handle_error(t_node **stack, char **res);
